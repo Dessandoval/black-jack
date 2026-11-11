@@ -33,6 +33,7 @@ public class Card {
 
     public int getPointValue() {
         // TODO: this is your job (Blackjack, p. 95).
+
         // Until you finish it, every card is worth 0.
         return 0;
     }
