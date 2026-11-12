@@ -38,7 +38,11 @@ public class Program {
 
     private static void printWinner(Player player1, int score1, Player player2, int score2) {
         if (score1 > 21 && score2 > 21) {
-            System.out.println("Result: Both went over 21! No winners.");
+            System.out.println("Busted: Both went over 21! No winners.");
+        } else if (score1 > 21) {
+            System.out.println(player1.getName() + " busted! " + player2.getName() + " wins!");
+        } else if (score2 > 21) {
+            System.out.println(player2.getName() + " busted! " + player1.getName() + " wins!");
         } else if (score1 > score2) {
             System.out.println("Result: " + player1.getName() + " wins!");
         } else if (score2 > score1) {
