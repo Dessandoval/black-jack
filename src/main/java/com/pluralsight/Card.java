@@ -32,10 +32,16 @@ public class Card {
     }
 
     public int getPointValue() {
-        // TODO: this is your job (Blackjack, p. 95).
-
-        // Until you finish it, every card is worth 0.
-        return 0;
+        if (faceUp) {
+            switch (value) {
+                case "A" -> value = "11";
+                case "K", "Q", "J" -> value = "10";
+                default -> value = value;
+            }
+            return Integer.parseInt(value);
+        } else {
+            return 0;
+        }
     }
 
     public boolean isFaceUp() {
@@ -44,5 +50,10 @@ public class Card {
 
     public void flip() {
         faceUp = !faceUp;
+    }
+
+    @Override
+    public String toString() {
+        return value + " of " + suit;
     }
 }

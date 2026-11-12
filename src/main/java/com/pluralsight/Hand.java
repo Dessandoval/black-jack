@@ -32,4 +32,7 @@ public class Hand {
 
         return value;
     }
+    public String toString() {
+        return cards.toString();
+    }
 }
