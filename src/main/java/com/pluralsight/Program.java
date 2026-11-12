@@ -15,8 +15,8 @@ public class Program {
         for (int round = 1; round <= 2; round++) {
             System.out.println("=== Round " + round + " ===");
 
-            Player player1 = new Player(name1 + "'s");
-            Player player2 = new Player(name2 + "'s");
+            Player player1 = new Player(name1);
+            Player player2 = new Player(name2);
 
             Deck deck = new Deck();
             deck.shuffle();
@@ -33,6 +33,7 @@ public class Program {
 
             printWinner(player1, score1, player2, score2);
         }
+        scanner.close();
     }
 
     private static void printWinner(Player player1, int score1, Player player2, int score2) {
