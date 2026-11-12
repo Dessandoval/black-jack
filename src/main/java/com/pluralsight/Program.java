@@ -15,7 +15,7 @@ public class Program {
         for (int round = 1; round <= 2; round++) {
             System.out.println("=== Round " + round + " ===");
 
-            Player player1 = new Player(name1);
+            Player player1 = new Player(name1 + "'s");
             Player player2 = new Player(name2);
 
             Deck deck = new Deck();
