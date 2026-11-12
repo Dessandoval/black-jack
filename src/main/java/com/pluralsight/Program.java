@@ -18,6 +18,9 @@ public class Program {
             }
             int score1 = player1.getHand().getValue();
             int score2 = player2.getHand().getValue();
+
+            System.out.println(player1.getName() + " Hand: " + player1.getHand() + " Total Score: " + score1);
+            System.out.println(player2.getName() + " Hand: " + player2.getHand() + " Total Score: " + score2);
         }
     }
 }
