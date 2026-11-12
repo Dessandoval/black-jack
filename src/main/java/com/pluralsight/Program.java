@@ -16,7 +16,7 @@ public class Program {
             System.out.println("=== Round " + round + " ===");
 
             Player player1 = new Player(name1 + "'s");
-            Player player2 = new Player(name2);
+            Player player2 = new Player(name2 + "'s");
 
             Deck deck = new Deck();
             deck.shuffle();
