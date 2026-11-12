@@ -22,5 +22,8 @@ public class Program {
             System.out.println(player1.getName() + " Hand: " + player1.getHand() + " Total Score: " + score1);
             System.out.println(player2.getName() + " Hand: " + player2.getHand() + " Total Score: " + score2);
         }
+       private static void printWinner(Player player1, int score1, Player player2, int score2){
+
+        }
     }
 }

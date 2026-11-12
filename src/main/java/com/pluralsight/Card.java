@@ -32,16 +32,15 @@ public class Card {
     }
 
     public int getPointValue() {
-        if (faceUp) {
-            switch (value) {
-                case "A" -> value = "11";
-                case "K", "Q", "J" -> value = "10";
-                default -> value = value;
-            }
-            return Integer.parseInt(value);
-        } else {
+        if (!faceUp) {
             return 0;
         }
+
+        return switch (value) {
+            case "A" -> 11;
+            case "K", "Q", "J" -> 10;
+            default -> Integer.parseInt(value);
+        };
     }
 
     public boolean isFaceUp() {
